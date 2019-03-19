@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 213617778}
   - component: {fileID: 213617777}
   m_Layer: 5
-  m_Name: Panel-Speech
+  m_Name: Speech-Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 341991490}
   - component: {fileID: 341991492}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SpeechText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,15 +394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.9
-  m_Text: 'New Text
-
-    test
-
-    test
-
-    text
-
-    text'
+  m_Text: 
 --- !u!222 &341991491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1698,6 +1690,68 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1818087911}
+--- !u!1 &2036112121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2036112124}
+  - component: {fileID: 2036112123}
+  - component: {fileID: 2036112122}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036112122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036112121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4047e5e95bae4f4d816a0cd9246a016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s:
+  - Hi, how are you?:Avira
+  - It's lovely weather today.
+  - To be honest, I'm glad its not snowing any more!
+--- !u!114 &2036112123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036112121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091939cefed94415dac384ef1c2255b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+    speechPanel: {fileID: 213617775}
+    speakerNameText: {fileID: 2044072187}
+    speechText: {fileID: 341991490}
+  isWaitingForUserInput: 0
+  targetSpeech: 
+--- !u!4 &2036112124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036112121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 359.8207, y: 102.30308, z: 7.164981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044072185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,7 +1764,7 @@ GameObject:
   - component: {fileID: 2044072187}
   - component: {fileID: 2044072189}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SpeakerNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
