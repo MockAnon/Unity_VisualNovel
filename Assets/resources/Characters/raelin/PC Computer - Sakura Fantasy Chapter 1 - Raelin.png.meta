@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 0c85da046c4744fb393da385d3e0dcb6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+    21300002: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+    21300004: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+    21300006: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+    21300008: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+    21300010: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+    21300012: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+    21300014: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+    21300016: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+    21300018: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+    21300020: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+    21300022: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+    21300024: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+    21300026: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+    21300028: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+    21300030: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+    21300032: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+    21300034: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+    21300036: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+    21300038: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+    21300040: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+    21300042: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+    21300044: PC Computer - Sakura Fantasy Chapter 1 - Raelin_22
+    21300046: PC Computer - Sakura Fantasy Chapter 1 - Raelin_23
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 7958
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0593020b01f4130ab06435fe10b103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 7958
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445bfd22c26a443eb8439b497cf883d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 7235
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a97c4ca7512b4e86b2589c108887da7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 7235
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbcdbe79a4834fada854227deb9a499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6512
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7f8808f60fa47f5a4613fbaf157398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 6512
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c8a4b1a43b64dcd8857e240a414018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5789
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0a8f903df07453dbea36fc782965c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 5789
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ad2f675659443af9469cd4e3c486bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5066
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4644e9bada74a10baeab8a2d3bd57c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 5066
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be74af1459a26429682806cb2e6a61fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4343
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e507e639c36543cb94b40e84758640a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 4343
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a978996693d314228b2d16a64fca3051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3620
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c61f6873329411aba0cca829db5a04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 3620
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a652438f928bc4daeaab4e604e23bced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2897
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ca8f0c55cfe4b4cbe61f96865c8534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2897
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1944f9b10fd7d4e26ab47301367ca1e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2174
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440dbc9c216d3458ba3a2180d5c84963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2174
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dd0d5db5fb8492a962ef86ea42d78e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1451
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5209d8f905f0a49c997104e4611babc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1451
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25baab5e5031f4c64a96df418bf89c13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 728
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c7d06059f204fc88f926c185eeab2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 728
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1f62adbfe4b4d62a3d9d6ece2f0136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ffc04623ae45d894156a6027a5080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_23
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 5
+        width: 478
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bfa257b92a74d68ba1fad2a25e66fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b88d50951ee1342fa830ff1f512d761f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
