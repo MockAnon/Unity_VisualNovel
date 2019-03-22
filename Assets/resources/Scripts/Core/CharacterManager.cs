@@ -10,7 +10,7 @@ public class CharacterManager : MonoBehaviour
 
     public RectTransform characterPanel;
 
-    public List<Character> characters = new list<Character>();
+    public List<Character> characters = new List<Character>();
 
     public Dictionary<string, int> characterDictionary = new Dictionary<string, int>();
 
@@ -20,22 +20,31 @@ public class CharacterManager : MonoBehaviour
         
     }
 
-    public void GetCharacter(string characterName bool tcreateCharacterIfDoesNotExist = true)
+    public Character GetCharacter(string characterName, bool createCharacterIfDoesNotExist = true, bool enableCreatedCharacterOnStart = true)
     {
         int index = -1;
-        if (characterDictionary.TryGetValue(characterName, out index)) 
+
+        if (characterDictionary.TryGetValue (characterName, out index)) 
         {
             return characters [index];
             
         }
-        else if (characterDictionaryIfDoesNotExist)
+        else if (createCharacterIfDoesNotExist)
         {
-            return CreateCharacter(characterName);
+            return CreateCharacter (characterName, enableCreatedCharacterOnStart);
         }
         return null;
     }
-    public Characters CreateCharacter(string characterName)
+
+    public Character CreateCharacter(string characterName, bool enableOnStart = true)
     {
+        Character newCharacter = new Character(characterName, enableOnStart);
+
+        characterDictionary.Add(characterName, characters.Count);
+
+        characters.Add (newCharacter);
+
+        return newCharacter;
         
     }
 

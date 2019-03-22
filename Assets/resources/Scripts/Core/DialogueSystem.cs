@@ -93,6 +93,12 @@ public class DialogueSystem : MonoBehaviour
         return retVal;
     }
 
+    public void Close()
+    {
+        StopSpeaking();
+        speechPanel.SetActive (false);
+    }
+
     [System.Serializable]
     public class ELEMENTS
     {
