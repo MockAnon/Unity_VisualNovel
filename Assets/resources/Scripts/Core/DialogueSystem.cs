@@ -3,116 +3,116 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueSystem : MonoBehaviour
+public class DialogueSystem : MonoBehaviour 
 {
-    public static DialogueSystem instance;
+	public static DialogueSystem instance;
 
-    public ELEMENTS elements;
+	public ELEMENTS elements;
 
-    void Awake()
-    {
-        instance = this;
-    }
+	void Awake()
+	{
+		instance = this;
+	}
 
-    // Use this for initialization
-    void Start()
-    {
+	// Use this for initialization
+	void Start () 
+	{
+		
+	}
 
-    }
+	/// <summary>
+	/// Say something and show it on the speech box.
+	/// </summary>
+	public void Say(string speech, string speaker = "")
+	{
+		StopSpeaking();
 
-    /// <summary>
-    /// Say something and show it on the speech box.
-    /// </summary>
-    public void Say(string speech, string speaker = "")
-    {
-        StopSpeaking();
+		speaking = StartCoroutine(Speaking(speech, false, speaker));
+	}
 
-        speaking = StartCoroutine(Speaking(speech, false, speaker));
-    }
+	/// <summary>
+	/// Say something to be added to what is already on the speech box.
+	/// </summary>
+	public void SayAdd(string speech, string speaker = "")
+	{
+		StopSpeaking();
 
-    /// <summary>
-    /// Say something to be added to what is already on the speech box.
-    /// </summary>
-    public void SayAdd(string speech, string speaker = "")
-    {
-        StopSpeaking();
+		speechText.text = targetSpeech;
 
-        speechText.text = targetSpeech;
+		speaking = StartCoroutine(Speaking(speech, true, speaker));
+	}
 
-        speaking = StartCoroutine(Speaking(speech, true, speaker));
-    }
+	public void StopSpeaking()
+	{
+		if (isSpeaking)
+		{
+			StopCoroutine(speaking);
+		}
+		speaking = null;
+	}
+		
+	public bool isSpeaking {get{return speaking != null;}}
+	[HideInInspector] public bool isWaitingForUserInput = false;
 
-    public void StopSpeaking()
-    {
-        if (isSpeaking)
-        {
-            StopCoroutine(speaking);
-        }
-        speaking = null;
-    }
+	public string targetSpeech = "";
+	Coroutine speaking = null;
+	IEnumerator Speaking(string speech, bool additive, string speaker = "")
+	{
+		speechPanel.SetActive(true);
+		targetSpeech = speech;
 
-    public bool isSpeaking { get { return speaking != null; } }
-    [HideInInspector] public bool isWaitingForUserInput = false;
+		if (!additive)
+			speechText.text = "";
+		else
+			targetSpeech = speechText.text + targetSpeech;
 
-    public string targetSpeech = "";
-    Coroutine speaking = null;
-    IEnumerator Speaking(string speech, bool additive, string speaker = "")
-    {
-        speechPanel.SetActive(true);
-        targetSpeech = speech;
+		speakerNameText.text = DetermineSpeaker(speaker);//temporary
 
-        if (!additive)
-            speechText.text = "";
-        else
-            targetSpeech = speechText.text + targetSpeech;
+		isWaitingForUserInput = false;
 
-        speakerNameText.text = DetermineSpeaker(speaker);//temporary
+		while(speechText.text != targetSpeech)
+		{
+			speechText.text += targetSpeech[speechText.text.Length];
+			yield return new WaitForEndOfFrame();
+		}
 
-        isWaitingForUserInput = false;
+		//text finished
+		isWaitingForUserInput = true;
+		while(isWaitingForUserInput)
+			yield return new WaitForEndOfFrame();
 
-        while (speechText.text != targetSpeech)
-        {
-            speechText.text += targetSpeech[speechText.text.Length];
-            yield return new WaitForEndOfFrame();
-        }
+		StopSpeaking();
+	}
 
-        //text finished
-        isWaitingForUserInput = true;
-        while (isWaitingForUserInput)
-            yield return new WaitForEndOfFrame();
+	string DetermineSpeaker(string s)
+	{
+		string retVal = speakerNameText.text;//default return is the current name
+		if (s != speakerNameText.text && s != "")
+			retVal = (s.ToLower().Contains("narrator")) ? "" : s;
 
-        StopSpeaking();
-    }
+		return retVal;
+	}
 
-    string DetermineSpeaker(string s)
-    {
-        string retVal = speakerNameText.text;//default return is the current name
-        if (s != speakerNameText.text && s != "")
-            retVal = (s.ToLower().Contains("narrator")) ? "" : s;
+	/// <summary>
+	/// Close the entire speech panel. Stop all dialogue.
+	/// </summary>
+	public void Close()
+	{
+		StopSpeaking ();
+		speechPanel.SetActive (false);
+	}
 
-        return retVal;
-    }
-
-    /// <summary>
-    /// Close the entire speech panel. Stop all dialogue.
-    /// </summary>
-    public void Close()
-    {
-        StopSpeaking();
-        speechPanel.SetActive(false);
-    }
-
-    [System.Serializable]
-    public class ELEMENTS
-    {
-        /// <summary>
-        /// The main panel containing all dialogue related elements on the UI
-        /// </summary>
-        public GameObject speechPanel;
-        public Text speakerNameText;
-        public Text speechText;
-    }
-    public GameObject speechPanel { get { return elements.speechPanel; } }
-    public Text speakerNameText { get { return elements.speakerNameText; } }
-    public Text speechText { get { return elements.speechText; } }
+	[System.Serializable]
+	public class ELEMENTS
+	{
+		/// <summary>
+		/// The main panel containing all dialogue related elements on the UI
+		/// </summary>
+		public GameObject speechPanel;
+		public Text speakerNameText;
+		public Text speechText;
+	}
+	public GameObject speechPanel {get{return elements.speechPanel;}}
+	public Text speakerNameText {get{return elements.speakerNameText;}}
+	public Text speechText {get{return elements.speechText;}}
 }
