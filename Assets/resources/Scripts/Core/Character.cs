@@ -11,7 +11,7 @@ public class Character
 
     public bool isMultiLayerCharacter { get { return renderers.renderer == null; } }
 
-    public bool enabled { get { return root.gameObject.activeInHierarchy; set( root.gameObject.SetActive(value);  ) }
+    public bool enabled { get { return root.gameObject.activeInHierarchy; } set { root.gameObject.SetActive(value); } }
 
     DialogueSystem dialogue;
 
@@ -23,7 +23,7 @@ public class Character
         if (!add)
             dialogue.Say(speech, characterName);
         else
-            DialogueSystem.SayAdd(speech, characterName);
+            DialogueSystem.SayAdd (speech, characterName);
     }
 
     [HideInInspector] public RectTransform root;
