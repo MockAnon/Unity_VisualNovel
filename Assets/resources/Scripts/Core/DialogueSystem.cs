@@ -23,11 +23,11 @@ public class DialogueSystem : MonoBehaviour
     /// <summary>
     /// Say something and show it on the speech box.
     /// </summary>
-    public void Say(string speech, bool additive = false, string speaker = "")
+    public void Say(string speech, string speaker = "")
     {
         StopSpeaking();
 
-        speaking = StartCoroutine(Speaking(speech, additive, speaker));
+        speaking = StartCoroutine(Speaking(speech, false, speaker));
     }
 
     /// <summary>
@@ -93,10 +93,13 @@ public class DialogueSystem : MonoBehaviour
         return retVal;
     }
 
+    /// <summary>
+    /// Close the entire speech panel. Stop all dialogue.
+    /// </summary>
     public void Close()
     {
         StopSpeaking();
-        speechPanel.SetActive (false);
+        speechPanel.SetActive(false);
     }
 
     [System.Serializable]
